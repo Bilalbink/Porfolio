@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
 const navLinks = [
     { label: "Home", to: "/" },
@@ -10,6 +10,8 @@ const navLinks = [
 ];
 
 const SidebarLayout = () => {
+    const location = useLocation();
+
     return (
         <div className="bg-base-200">
             {/* Desktop: floating text sidebar */}
@@ -18,7 +20,7 @@ const SidebarLayout = () => {
                     <Link
                         key={link.to}
                         to={link.to}
-                        className="text-sm font-medium hover:text-base-content transition-colors"
+                        className={`text-sm font-medium hover:text-secondary transition-colors ${location.pathname == link.to && "text-neutral"}`}
                     >
                         {link.label}
                     </Link>
@@ -40,9 +42,9 @@ const SidebarLayout = () => {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="#ffffff"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                     >
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -52,9 +54,8 @@ const SidebarLayout = () => {
 
                 {/* buttons that show up when FAB is open */}
                 {navLinks.map((link) => (
-                    <button className="btn btn-ghost">
+                    <button key={link.to} className="btn btn-ghost">
                         <Link
-                            key={link.to}
                             to={link.to}
                             className="text-sm font-medium hover:text-base-content transition-colors"
                         >

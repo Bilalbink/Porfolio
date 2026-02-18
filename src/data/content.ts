@@ -175,7 +175,7 @@ export const journeyItems: JourneyItem[] = [
         location: "Ankara, Turkey",
     },
     {
-        id: "3",
+        id: "4",
         type: "work",
         title: "Software Developer",
         institution: "Erstream",
@@ -185,7 +185,7 @@ export const journeyItems: JourneyItem[] = [
         location: "Ankara, Turkey",
     },
     {
-        id: "3",
+        id: "5",
         type: "work",
         title: "Founding Engineer",
         institution: "Stacksync",
