@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Custom color theme - Dark Theme */
+@theme {
+  --color-tuscan-sun: #eec643;
+  --color-onyx: #141414;
+  --color-platinum: #eef0f2;
+  --color-vivid-royal: #0d21a1;
+  --color-prussian-blue: #011638;
+
+  /* daisyUI color tokens */
+  --color-primary: #eec643;
+  --color-primary-content: #141414;
+  --color-secondary: #0d21a1;
+  --color-secondary-content: #eef0f2;
+  --color-accent: #011638;
+  --color-neutral: #141414;
+  --color-base-100: #141414;
+  --color-base-200: #011638;
+  --color-base-300: #0d21a1;
+  --color-base-content: #eef0f2;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure minimum font size on mobile to prevent auto-zoom */
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
