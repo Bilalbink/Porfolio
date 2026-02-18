@@ -47,7 +47,9 @@ const JourneyItem = ({ item, index }: Props) => {
     );
 
     const dot = (
-        <div className={`relative z-10 w-4 h-4 rounded-full border-4 border-base-200 ${item.type === "education" ? "bg-primary" : "bg-secondary"}`} />
+        <div
+            className={`relative z-10 w-4 h-4 rounded-full border-4 border-base-200 ${item.type === "education" ? "bg-success" : "bg-neutral"}`}
+        />
     );
 
     return (
@@ -65,9 +67,13 @@ const JourneyItem = ({ item, index }: Props) => {
             <div className="hidden lg:flex items-center w-full">
                 <div className="w-5/12">{isLeft && card}</div>
                 <div className="w-2/12 flex items-center justify-center relative">
-                    {isLeft && <div className="absolute right-1/2 left-0 border-t-2 border-dashed border-accent" />}
+                    {isLeft && (
+                        <div className="absolute right-1/2 left-0 border-t-2 border-dashed border-accent" />
+                    )}
                     {dot}
-                    {!isLeft && <div className="absolute left-1/2 right-0 border-t-2 border-dashed border-accent" />}
+                    {!isLeft && (
+                        <div className="absolute left-1/2 right-0 border-t-2 border-dashed border-accent" />
+                    )}
                 </div>
                 <div className="w-5/12">{!isLeft && card}</div>
             </div>
