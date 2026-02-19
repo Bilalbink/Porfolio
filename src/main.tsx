@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Journey from "./pages/Journey/Journey";
 import Projects from "./pages/Projects/Projects";
 import Arts from "./pages/Arts/Arts";
+import Food from "./pages/Food/Food";
 // import Music from './pages/Music';
 
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path: "arts-and-craft",
                 element: <Arts />,
+            },
+            {
+                path: "cooking",
+                element: <Food />,
             },
             // {
             //   path: 'music',

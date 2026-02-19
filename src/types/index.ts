@@ -39,3 +39,13 @@ export interface JourneyItem {
     description: string;
     location?: string;
 }
+
+export interface FoodItem {
+    id: string;
+    title: string;
+    cuisine: string;
+    date: string;
+    description: string;
+    images: string[];
+    link?: string;
+}

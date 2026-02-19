@@ -1,11 +1,9 @@
-import bilalImg from "../assets/bilal_bin_khalid.png";
-
 const Home = () => {
     return (
         <div className="hero bg-base-200 min-h-screen">
             <div className="hero-content flex-row-reverse items-start">
                 <img
-                    src={bilalImg}
+                    src="https://res.cloudinary.com/dcmewemzs/image/upload/v1771499745/bilal_bin_khalid_uoqcmq.png"
                     alt="Muhammad Bilal Bin Khalid"
                     className="h-[40vh] lg:h-[75vh] object-contain self-end relative z-10 -ml-[8vw] lg:-ml-55 drop-shadow-2xl/25"
                 />

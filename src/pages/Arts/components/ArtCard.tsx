@@ -37,51 +37,61 @@ const ArtCard = ({ piece }: Props) => {
     const [current, setCurrent] = useState(0);
     const [modalImage, setModalImage] = useState<string | null>(null);
 
-    const prev = () =>
-        setCurrent((c) => (c - 1 + slides.length) % slides.length);
+    const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length);
     const next = () => setCurrent((c) => (c + 1) % slides.length);
 
     return (
         <>
             <div className="card bg-base-100 shadow-md flex flex-col h-full">
                 {/* Carousel */}
-                <div className="relative overflow-hidden rounded-t-2xl h-52">
-                    <img
-                        src={withCloudinaryCrop(slides[current])}
-                        alt={`${piece.title} ${current + 1}`}
-                        className="w-full h-full object-cover cursor-zoom-in"
-                        onClick={() => setModalImage(slides[current])}
-                    />
+                {slides.length > 0 && (
+                    <div className="relative overflow-hidden rounded-t-2xl h-52">
+                        {/* Slide strip — all images side by side, translated to show current */}
+                        <div
+                            className="flex h-full transition-transform duration-300 ease-in-out"
+                            style={{ transform: `translateX(-${current * 100}%)` }}
+                        >
+                            {slides.map((img, i) => (
+                                <img
+                                    key={i}
+                                    src={withCloudinaryCrop(img)}
+                                    alt={`${piece.title} ${i + 1}`}
+                                    className="flex-shrink-0 w-full h-full object-cover cursor-zoom-in"
+                                    onClick={() => setModalImage(img)}
+                                />
+                            ))}
+                        </div>
 
-                    {slides.length > 1 && (
-                        <>
-                            <div className="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 justify-between pointer-events-none">
-                                <button
-                                    className="btn btn-circle btn-sm bg-base-100/70 border-none pointer-events-auto"
-                                    onClick={prev}
-                                >
-                                    ❮
-                                </button>
-                                <button
-                                    className="btn btn-circle btn-sm bg-base-100/70 border-none pointer-events-auto"
-                                    onClick={next}
-                                >
-                                    ❯
-                                </button>
-                            </div>
-
-                            <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5">
-                                {slides.map((_, i) => (
+                        {slides.length > 1 && (
+                            <>
+                                <div className="absolute left-3 right-3 top-1/2 flex -translate-y-1/2 justify-between pointer-events-none z-10">
                                     <button
-                                        key={i}
-                                        onClick={() => setCurrent(i)}
-                                        className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-white" : "bg-white/50 hover:bg-white/80"}`}
-                                    />
-                                ))}
-                            </div>
-                        </>
-                    )}
-                </div>
+                                        className="btn btn-circle btn-sm bg-base-100/70 border-none pointer-events-auto"
+                                        onClick={prev}
+                                    >
+                                        ❮
+                                    </button>
+                                    <button
+                                        className="btn btn-circle btn-sm bg-base-100/70 border-none pointer-events-auto"
+                                        onClick={next}
+                                    >
+                                        ❯
+                                    </button>
+                                </div>
+
+                                <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1.5 z-10">
+                                    {slides.map((_, i) => (
+                                        <button
+                                            key={i}
+                                            onClick={() => setCurrent(i)}
+                                            className={`w-2 h-2 rounded-full transition-colors ${i === current ? "bg-white" : "bg-white/50 hover:bg-white/80"}`}
+                                        />
+                                    ))}
+                                </div>
+                            </>
+                        )}
+                    </div>
+                )}
 
                 <div className="card-body p-5 flex flex-col flex-1">
                     {/* Title + medium badge */}
