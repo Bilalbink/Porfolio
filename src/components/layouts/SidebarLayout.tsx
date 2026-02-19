@@ -6,7 +6,7 @@ const navLinks = [
     { label: "Projects", to: "/projects" },
     { label: "Arts and Craft", to: "/arts-and-craft" },
     { label: "Cooking", to: "/cooking" },
-    { label: "Music", to: "/music" },
+    // { label: "Music", to: "/music" },
 ];
 
 const SidebarLayout = () => {
@@ -54,7 +54,13 @@ const SidebarLayout = () => {
 
                 {/* buttons that show up when FAB is open */}
                 {navLinks.map((link) => (
-                    <button key={link.to} className="btn btn-ghost">
+                    <button
+                        key={link.to}
+                        className="btn btn-neutral"
+                        onClick={() =>
+                            (document.activeElement as HTMLElement)?.blur()
+                        }
+                    >
                         <Link
                             to={link.to}
                             className="text-sm font-medium hover:text-base-content transition-colors"

@@ -141,8 +141,8 @@ export const foodItems: FoodItem[] = [
         description:
             "After trying a Panna Cotta for the first time in Sicily, I immediately fell in love with its creamy goodness and sweet and tangy topping. The version I made used Agar Agar and was topped with a Blackberry Coulis.",
         images: [
-            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771497256/WhatsApp_Image_2026-02-19_at_9.43.22_AM_hpuukh.jpg",
             "https://res.cloudinary.com/dcmewemzs/image/upload/v1771497223/WhatsApp_Image_2026-02-19_at_9.43.19_AM_2_yrbrpt.jpg",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771497256/WhatsApp_Image_2026-02-19_at_9.43.22_AM_hpuukh.jpg",
         ],
         link: "https://www.youtube.com/watch?v=p5mSdmO6kEc",
     },
