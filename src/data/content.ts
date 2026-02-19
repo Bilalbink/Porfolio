@@ -1,4 +1,5 @@
 import type { Project, ArtPiece, Playlist, JourneyItem } from "../types";
+import OffshootThumbnail from "../assets/offshoot-thumbnail.png";
 
 // Home page content
 export const homeContent = {
@@ -11,60 +12,22 @@ export const homeContent = {
 export const projects: Project[] = [
     {
         id: "1",
-        title: "E-commerce Platform",
+        title: "Offshoot",
         description:
-            "A full-featured online store with cart, checkout, and payment integration",
+            "Breathe new life into your Spotify playlists with powerful tools that transform how you discover, organize, and experience your music!",
         longDescription:
-            "Built a complete e-commerce solution with React, Node.js, and Stripe. Features include user authentication, product catalog with search and filtering, shopping cart functionality, secure payment processing, and an admin dashboard for inventory management. The platform handles thousands of products and supports multiple payment methods.",
+            "Offshoot helps you get more out of your Spotify account with three powerful features. Split large playlists into smaller, organized collections based on song count, genres, or moods. View detailed monthly statistics about your listening habits, including top songs, artists, and genres. Discover new music with personalized recommendations tailored to your unique taste and listening history.",
         technologies: [
             "React",
             "Node.js",
             "Express",
-            "MongoDB",
-            "Stripe",
             "Tailwind CSS",
+            "AppWrite",
+            "Spotify Web API",
         ],
-        thumbnail:
-            "https://images.unsplash.com/photo-1557821552-17105176677c?w=400&h=300&fit=crop",
-        githubUrl: "https://github.com/yourusername/ecommerce-platform",
-        liveUrl: "https://demo-ecommerce.example.com",
-    },
-    {
-        id: "2",
-        title: "Task Management App",
-        description:
-            "Collaborative project management tool with real-time updates",
-        longDescription:
-            "Developed a Trello-like task management application featuring drag-and-drop boards, real-time collaboration using WebSockets, team management, task assignments, and progress tracking. The app includes notifications, file attachments, and activity logs to keep teams synchronized.",
-        technologies: [
-            "TypeScript",
-            "React",
-            "Firebase",
-            "Socket.io",
-            "React Beautiful DnD",
-        ],
-        thumbnail:
-            "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop",
-        githubUrl: "https://github.com/yourusername/task-manager",
-        liveUrl: "https://taskapp.example.com",
-    },
-    {
-        id: "3",
-        title: "Weather Dashboard",
-        description:
-            "Beautiful weather app with forecasts and interactive maps",
-        longDescription:
-            "Created an elegant weather dashboard that displays current conditions, 7-day forecasts, and interactive weather maps. Features include location search, geolocation support, weather alerts, and historical data visualization. The UI adapts beautifully to different weather conditions with dynamic backgrounds and animations.",
-        technologies: [
-            "React",
-            "OpenWeather API",
-            "Chart.js",
-            "Leaflet",
-            "CSS3",
-        ],
-        thumbnail:
-            "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=400&h=300&fit=crop",
-        githubUrl: "https://github.com/yourusername/weather-dashboard",
+        thumbnail: OffshootThumbnail,
+        githubUrl: "https://github.com/Bilalbink/offshoot",
+        liveUrl: "https://offshoot.fly.dev",
     },
 ];
 
