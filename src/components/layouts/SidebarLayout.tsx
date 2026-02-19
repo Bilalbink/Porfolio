@@ -4,8 +4,8 @@ const navLinks = [
     { label: "Home", to: "/" },
     { label: "Journey", to: "/journey" },
     { label: "Projects", to: "/projects" },
-    { label: "Arts and Craft", to: "/arts-and-craft" },
-    { label: "Cooking", to: "/cooking" },
+    { label: "Arts & Craft", to: "/arts-and-craft" },
+    { label: "Cooking & Baking", to: "/cooking-and-baking" },
     // { label: "Music", to: "/music" },
 ];
 
