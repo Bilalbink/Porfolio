@@ -33,11 +33,12 @@ const formatDate = (date: string) => {
 };
 
 const ArtCard = ({ piece }: Props) => {
-    const slides = piece.images.length > 0 ? piece.images : [piece.thumbnail];
+    const slides = piece.images.length > 0 ? piece.images : [];
     const [current, setCurrent] = useState(0);
     const [modalImage, setModalImage] = useState<string | null>(null);
 
-    const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length);
+    const prev = () =>
+        setCurrent((c) => (c - 1 + slides.length) % slides.length);
     const next = () => setCurrent((c) => (c + 1) % slides.length);
 
     return (

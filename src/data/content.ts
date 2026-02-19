@@ -40,8 +40,6 @@ export const artPieces: ArtPiece[] = [
         date: "2025-11",
         description:
             "My first attempt at book binding. I used 130 GSM papers with a yellowish tint for the pages, red thread for the stitching and 300 GSM paper for the cover.",
-        thumbnail:
-            "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop",
         images: [
             "https://res.cloudinary.com/dcmewemzs/image/upload/v1771491233/WhatsApp_Image_2026-02-19_at_9.43.34_AM_1_bg5mvq.jpg",
             "https://res.cloudinary.com/dcmewemzs/image/upload/v1771491232/WhatsApp_Image_2026-02-19_at_9.43.33_AM_d0ope6.jpg",
@@ -57,8 +55,6 @@ export const artPieces: ArtPiece[] = [
         date: "2025-04",
         description:
             "Digital art I made for my spotify playlists. Each art reflects the genre/mood of the playlist. Created using Adobe Illustrator and Photoshop.",
-        thumbnail:
-            "https://images.unsplash.com/photo-1549289524-06cf8837ace5?w=400&h=300&fit=crop",
         images: [
             "https://res.cloudinary.com/dcmewemzs/image/upload/v1771494441/origmai_racoon_pw6pft.png",
             "https://res.cloudinary.com/dcmewemzs/image/upload/v1771494372/3b782f102665091.603af44819825_pq72gk.png",
@@ -74,8 +70,6 @@ export const artPieces: ArtPiece[] = [
         medium: "Origami",
         date: "2024-06",
         description: "A gift for a very special someone ;)",
-        thumbnail:
-            "https://images.unsplash.com/photo-1549289524-06cf8837ace5?w=400&h=300&fit=crop",
         images: [
             "https://res.cloudinary.com/dcmewemzs/image/upload/v1771491235/WhatsApp_Image_2026-02-19_at_9.43.45_AM_1_twxhfy.jpg",
             "https://res.cloudinary.com/dcmewemzs/image/upload/v1771491233/WhatsApp_Image_2026-02-19_at_9.43.43_AM_1_boapzv.jpg",

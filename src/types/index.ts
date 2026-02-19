@@ -16,7 +16,6 @@ export interface ArtPiece {
     medium: string;
     date: string;
     description: string;
-    thumbnail: string;
     images: string[];
     link?: string;
 }
