@@ -7,7 +7,7 @@ import SidebarLayout from "./components/layouts/SidebarLayout";
 import Home from "./pages/Home";
 import Journey from "./pages/Journey/Journey";
 import Projects from "./pages/Projects/Projects";
-// import ArtsAndCraft from './pages/ArtsAndCraft';
+import Arts from "./pages/Arts/Arts";
 // import Music from './pages/Music';
 
 const router = createBrowserRouter([
@@ -27,10 +27,10 @@ const router = createBrowserRouter([
                 path: "projects",
                 element: <Projects />,
             },
-            // {
-            //   path: 'arts-and-craft',
-            //   element: <ArtsAndCraft />,
-            // },
+            {
+                path: "arts-and-craft",
+                element: <Arts />,
+            },
             // {
             //   path: 'music',
             //   element: <Music />,

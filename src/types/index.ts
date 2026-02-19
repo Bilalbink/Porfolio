@@ -18,6 +18,7 @@ export interface ArtPiece {
     description: string;
     thumbnail: string;
     images: string[];
+    link?: string;
 }
 
 export interface Playlist {

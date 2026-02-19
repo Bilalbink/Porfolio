@@ -34,43 +34,54 @@ export const projects: Project[] = [
 // Art & Craft pieces
 export const artPieces: ArtPiece[] = [
     {
-        id: "1",
-        title: "Abstract Sunset",
-        medium: "Acrylic on Canvas",
-        date: "2024-01",
+        id: "3",
+        title: "The Dragon Fly Codex",
+        medium: "Book Binding",
+        date: "2025-11",
         description:
-            "An exploration of vibrant colors and fluid forms inspired by desert sunsets. This piece captures the ephemeral beauty of the golden hour through bold strokes and layered textures.",
+            "My first attempt at book binding. I used 130 GSM papers with a yellowish tint for the pages, red thread for the stitching and 300 GSM paper for the cover.",
         thumbnail:
             "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=400&h=300&fit=crop",
         images: [
-            "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&h=600&fit=crop",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771491233/WhatsApp_Image_2026-02-19_at_9.43.34_AM_1_bg5mvq.jpg",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771491232/WhatsApp_Image_2026-02-19_at_9.43.33_AM_d0ope6.jpg",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771491232/WhatsApp_Image_2026-02-19_at_9.43.34_AM_owzlbp.jpg",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771491232/WhatsApp_Image_2026-02-19_at_9.43.34_AM_2_dpbww4.jpg",
         ],
+        link: "https://www.youtube.com/watch?v=mrL8GesGgoU&t=1s",
     },
     {
         id: "2",
-        title: "Urban Geometry",
+        title: "Origami Playlist Art",
         medium: "Digital Art",
-        date: "2024-02",
+        date: "2025-04",
         description:
-            "A digital composition exploring the intersection of architecture and abstract geometry. Created using Procreate and inspired by modern cityscapes.",
+            "Digital art I made for my spotify playlists. Each art reflects the genre/mood of the playlist. Created using Adobe Illustrator and Photoshop.",
         thumbnail:
             "https://images.unsplash.com/photo-1549289524-06cf8837ace5?w=400&h=300&fit=crop",
         images: [
-            "https://images.unsplash.com/photo-1549289524-06cf8837ace5?w=800&h=600&fit=crop",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771494441/origmai_racoon_pw6pft.png",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771494372/3b782f102665091.603af44819825_pq72gk.png",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771494419/c31ac7102665091.60589f874fa37_bxufvg.png",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771494373/9701ff102665091.6058a664aa35c_hr4z4s.png",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771494374/bceb69102665091.5f3c09fdcdece_vpee4g.png",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771494443/Origami_Cloud_v1_ymsayt.png",
         ],
     },
     {
-        id: "3",
-        title: "Handcrafted Ceramics",
-        medium: "Pottery",
-        date: "2023-12",
-        description:
-            "A collection of hand-thrown pottery pieces featuring organic shapes and natural glazes. Each piece is unique and reflects the meditative process of working with clay.",
+        id: "1",
+        title: "Raccoon Heart",
+        medium: "Origami",
+        date: "2024-06",
+        description: "A gift for a very special someone ;)",
         thumbnail:
-            "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=300&fit=crop",
+            "https://images.unsplash.com/photo-1549289524-06cf8837ace5?w=400&h=300&fit=crop",
         images: [
-            "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800&h=600&fit=crop",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771491235/WhatsApp_Image_2026-02-19_at_9.43.45_AM_1_twxhfy.jpg",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771491233/WhatsApp_Image_2026-02-19_at_9.43.43_AM_1_boapzv.jpg",
+            "https://res.cloudinary.com/dcmewemzs/image/upload/v1771491234/WhatsApp_Image_2026-02-19_at_9.43.44_AM_kjxe3u.jpg",
         ],
+        link: "https://www.youtube.com/watch?v=X2FYuvt-U80",
     },
 ];
 
